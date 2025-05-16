@@ -1,0 +1,60 @@
+PS CUserscoppe cd CUserscoppeDesktop課題
+PS CUserscoppeDesktop課題 mkdir git_challenge
+
+
+    ディレクトリ CUserscoppeDesktop課題
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        20250516     2044                git_challenge
+
+
+PS CUserscoppeDesktop課題 cd CUserscoppeDesktop課題git_challenge
+PS CUserscoppeDesktop課題git_challenge git init
+Initialized empty Git repository in CUserscoppeDesktop課題git_challenge.git
+PS CUserscoppeDesktop課題git_challenge git add hello_world.txt                       
+PS CUserscoppeDesktop課題git_challenge git status                                    
+On branch main
+
+No commits yet
+
+Changes to be committed
+  (use git rm --cached file... to unstage)
+        new file   hello_world.txt
+
+PS CUserscoppeDesktop課題git_challenge git diff --staged
+diff --git ahello_world.txt bhello_world.txt
+new file mode 100644
+index 0000000..e69de29
+PS CUserscoppeDesktop課題git_challenge git diff hello_world.txt
+diff --git ahello_world.txt bhello_world.txt
+index e69de29..5dd01c1 100644
+--- ahello_world.txt
++++ bhello_world.txt
+@@ -0,0 +1 @@
++Hello, world!
+ No newline at end of file
+PS CUserscoppeDesktop課題git_challenge git add hello_world.txt 
+PS CUserscoppeDesktop課題git_challenge git commit -m hello_world.txtを追加         
+[main (root-commit) 28c84d7] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS CUserscoppeDesktop課題git_challenge git diff hello_world.txt
+diff --git ahello_world.txt bhello_world.txt
+index 5dd01c1..42ae6b0 100644
+--- ahello_world.txt
++++ bhello_world.txt
+@@ -1 +1,2 @@
+-Hello, world!
+ No newline at end of file
++Hello, world!
++こんにちは、世界！
+ No newline at end of file
+PS CUserscoppeDesktop課題git_challenge git add hello_world.txt
+PS CUserscoppeDesktop課題git_challenge git commit -m 日本語訳を追記        
+[main 2d9496f] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS CUserscoppeDesktop課題git_challenge git log --oneline
+2d9496f (HEAD - main) 日本語訳を追記
+28c84d7 hello_world.txtを追加
